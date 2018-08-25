@@ -1,0 +1,28 @@
+{"namespace": "jhu.avro",
+ "type": "record",
+ "name": "EmailSimple",
+ "fields": [
+     { "name" : "date",
+       "type" : ["null","long"]},
+     { "name": "from",
+       "type": ["null","string"]},
+     { "name": "to",
+       "type" : ["null",
+                 { "type": "array",
+                   "items":
+                   {"name":"email",
+                    "type":"string"
+                   }}]},
+     { "name": "cc",
+       "type" : ["null",
+                 { "type": "array",
+                   "items":
+                   { "name":"email",
+                     "type":"string"}}]},
+     { "name": "bcc",
+       "type" : ["null",
+                 { "type": "array",
+                   "items":
+                   {"name":"email",
+                    "type":"string"}}]} ]
+}
