@@ -15,8 +15,9 @@ If you haven't already done so, you should add the Hadoop commands to your path.
 export HADOOP_HOME=~/hadoop/current
 export PATH=$HADOOP_HOME/bin:$HADOOP_HOME/sbin:$PATH
 ``` 
+Note: In Vocareum environment, I have already added hadoop commands to PATH.
 
-### Startup HDFS
+### Startup HDFS (do not do this in Vocareum)
 Now that you have hadoop on your path, you should be able to start HDFS from your current directory. Run the following command:
 
 ```
@@ -27,8 +28,16 @@ start-dfs.sh
 
 When you installed Hadoop, you created a user folder in HDFS. You can display the contents of your home directory with the following command:
 
+In local installation of Hadoop:
+
 ```
 hadoop fs -ls .
+```
+
+Vocareum uses the newer hdfs more effectively, so use:
+
+```
+hdfs dfs -ls .
 ```
 
 If you get an error, you need to create your home directory. I used the following commands to create mine:
@@ -36,6 +45,13 @@ If you get an error, you need to create your home directory. I used the followin
 ```
 hadoop fs -mkdir /user
 hadoop fs -mkdir /user/pwilso12
+```
+
+Vocareum uses the newer hdfs more effectively, so use:
+
+```
+hdfs dfs -mkdir /user
+hdfs dfs -mkdir /user/pwilso12
 ```
 
 ## HDFS Shell Exercises
@@ -49,7 +65,7 @@ Demonstrate your knowledge of the bash and the HDFS shell by accomplishing the f
 Here is an example of what you should see:
 
 ```
-[pwilso12@hadoop ~]$ hadoop fs -ls /
+[pwilso12@hadoop ~]$ hdfs dfs -ls /
 Found 4 items
 drwxr-xr-x   - pwilso12 supergroup          0 2018-02-11 10:56 /data
 drwxr-xr-x   - pwilso12 supergroup          0 2018-02-11 10:56 /testHDFS
