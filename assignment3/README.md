@@ -1,8 +1,6 @@
 # Student Information
 Author: 
-
 Email: 
-
 
 # Programming Assignment 3 - HDFS Java API
 In this assignment you will modify a maven project by adding code to implement file system functions using the HDFS Java API.
