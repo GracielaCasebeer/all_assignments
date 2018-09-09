@@ -1,5 +1,5 @@
 # Student Information
-Author: 
+Author:  
 Email: 
 
 # Programming Assignment 3 - HDFS Java API
