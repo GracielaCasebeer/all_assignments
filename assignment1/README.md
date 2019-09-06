@@ -12,6 +12,8 @@ Take a screenshot of the namenode by browsing to http://localhost:50070
 
 ![alt text](images\Screenshot1.png "http://localhost:50070 screenshot")
 
+![alt text](https://github.com/GracielaCasebeer/all_assignments/blob/master/assignment1/images/Screenshot1.png "http://localhost:50070 screenshot")
+
 # Run the hadoop example map reduce job
 The hadoop documentation provides you with an example command to run a map reduce job.
 Use the script command to save your console output in a file. For example
