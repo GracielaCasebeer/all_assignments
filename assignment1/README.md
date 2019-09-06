@@ -10,8 +10,6 @@ NOTE: You should create etc/hadoop/mapred-site.xml from the etc/hadoop/mapred-si
 # Show that your namenode is running
 Take a screenshot of the namenode by browsing to http://localhost:50070
 
-![alt text](images\Screenshot1.png "http://localhost:50070 screenshot")
-
 ![alt text](https://github.com/GracielaCasebeer/all_assignments/blob/master/assignment1/images/Screenshot1.png "http://localhost:50070 screenshot")
 
 # Run the hadoop example map reduce job
@@ -29,7 +27,7 @@ $ exit
 # Show that you used yarn
 Take a screenshot of the ResourceManager UI by browsing to http://localhost:8088
 
-![alt text](images\Screenshot2.png "http://localhost:8088 screenshot")
+![alt text](https://github.com/GracielaCasebeer/all_assignments/blob/master/assignment1/images/Screenshot2.png "http://localhost:8088 screenshot")
 
 # (Bonus) Build the sample code that is included in this git project
 You will need to install the maven build tool:
