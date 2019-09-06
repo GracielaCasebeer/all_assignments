@@ -23,7 +23,7 @@ After you run your map reduce job, use the exit command to close out the file be
 
 $ exit
 
-[Link to the terminal output text file (https://github.com/GracielaCasebeer/all_assignments/blob/master/assignment1/terminaloutput/gcasebeerhw1.txt)]
+[Link to the terminal output text file] (https://github.com/GracielaCasebeer/all_assignments/blob/master/assignment1/terminaloutput/gcasebeerhw1.txt)]
 
 # Show that you used yarn
 Take a screenshot of the ResourceManager UI by browsing to http://localhost:8088
