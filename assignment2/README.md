@@ -58,6 +58,8 @@ hdfs dfs -mkdir /user/pwilso12
 
 Demonstrate your knowledge of the bash and the HDFS shell by accomplishing the following objectives. You can use the ___script___ command to caputure the console output for your session. Alternatively, you can cut and paste the console output into a file.
 
+[Link to the terminal output text file](https://github.com/GracielaCasebeer/all_assignments/blob/master/assignment2/terminaloutput/gcasebeerhw2.txt)
+
 ### A) Create two directories on HDFS
 1. Use the -mkdir command to create __/data__ and __/testHDFS__ in HDFS.
 2. Use the -ls command to show that the directories exist.

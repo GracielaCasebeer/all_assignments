@@ -1,0 +1,125 @@
+Script started on Thu 12 Sep 2019 10:41:15 AM PDT
+]777;notify;Command completed;git status]0;gcasebe1@hdserver:~/hadoop-2.7.3]7;file://hdserver/home/gcasebe1/hadoop-2.7.3[?1034h[gcasebe1@hdserver hadoop-2.7.3]$ hadod[Kop fs -mkdir [7Pgit status[1Padd *statusrm --cached -r *[2Pcd all_assignments[16@git rm --cached -r[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpwd[Kcd ..[2Ppwd[1Plscleargit statusrm -r *[Khelpstatuscd all_assignmentsls[Kgit statuscd projectsls[Kcd ..[3Plscd ..git pushcommit -m "Updating README.md to include terminal output"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[32Padd assignment1/README.mdpush[Kcommit -m "Updating README.md to include terminal output"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[32Padd assignment1/README.mdcommit -m "Updating README.md to include terminal output"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpush[Kadd assignment1/README.mdcommit -m "Updating README.md to include terminal output"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpush[K[3Pcd ..[3Plscd ..[3Plscd projects[1Pgit statusls[Kcd all_assignments[8Pgit status[2Phelp[2Prm -r *[1Pstatus[5Pclear[3Plspwdcd ..[2Ppwdgit rm --cached -r all_assignments[16Pcd[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit rm --cached -r *[10Pstatus[1Padd *statushadoop fs -mkdir [K[K[K[K[K[Kls .
+Found 2 items
+drwxr-xr-x   - gcasebe1 supergroup          0 2019-09-06 14:44 input
+drwxr-xr-x   - gcasebe1 supergroup          0 2019-09-06 14:49 output
+]777;notify;Command completed;hadoop fs -ls .]0;gcasebe1@hdserver:~/hadoop-2.7.3]7;file://hdserver/home/gcasebe1/hadoop-2.7.3[gcasebe1@hdserver hadoop-2.7.3]$ hadoop fs -mkdir data
+]777;notify;Command completed;hadoop fs -mkdir data]0;gcasebe1@hdserver:~/hadoop-2.7.3]7;file://hdserver/home/gcasebe1/hadoop-2.7.3[gcasebe1@hdserver hadoop-2.7.3]$ hadoop fs -mkdir data[6Pls .
+Found 3 items
+drwxr-xr-x   - gcasebe1 supergroup          0 2019-09-12 10:44 data
+drwxr-xr-x   - gcasebe1 supergroup          0 2019-09-06 14:44 input
+drwxr-xr-x   - gcasebe1 supergroup          0 2019-09-06 14:49 output
+]777;notify;Command completed;hadoop fs -ls .]0;gcasebe1@hdserver:~/hadoop-2.7.3]7;file://hdserver/home/gcasebe1/hadoop-2.7.3[gcasebe1@hdserver hadoop-2.7.3]$ hadoop fs -ls .mkdir data[K[K[K[KtestHDFS
+]777;notify;Command completed;hadoop fs -mkdir testHDFS]0;gcasebe1@hdserver:~/hadoop-2.7.3]7;file://hdserver/home/gcasebe1/hadoop-2.7.3[gcasebe1@hdserver hadoop-2.7.3]$ hadoop fs -mkdir testHDFSls .[K
+Found 4 items
+drwxr-xr-x   - gcasebe1 supergroup          0 2019-09-12 10:44 data
+drwxr-xr-x   - gcasebe1 supergroup          0 2019-09-06 14:44 input
+drwxr-xr-x   - gcasebe1 supergroup          0 2019-09-06 14:49 output
+drwxr-xr-x   - gcasebe1 supergroup          0 2019-09-12 10:44 testHDFS
+]777;notify;Command completed;hadoop fs -ls .]0;gcasebe1@hdserver:~/hadoop-2.7.3]7;file://hdserver/home/gcasebe1/hadoop-2.7.3[gcasebe1@hdserver hadoop-2.7.3]$ hdfs dfs -ls /
+Found 2 items
+drwx------   - gcasebe1 supergroup          0 2019-09-06 14:45 /tmp
+drwxr-xr-x   - gcasebe1 supergroup          0 2019-09-06 14:44 /user
+]777;notify;Command completed;hdfs dfs -ls /]0;gcasebe1@hdserver:~/hadoop-2.7.3]7;file://hdserver/home/gcasebe1/hadoop-2.7.3[gcasebe1@hdserver hadoop-2.7.3]$ hdfs dfs -ls /adoop fs -ls .mkdir testHDFSls .[Kmkdir data/data
+]777;notify;Command completed;hadoop fs -mkdir /data]0;gcasebe1@hdserver:~/hadoop-2.7.3]7;file://hdserver/home/gcasebe1/hadoop-2.7.3[gcasebe1@hdserver hadoop-2.7.3]$ hadoop fs -mkdir /data[8Pdfs dfs -ls /adoop fs -ls .mkdir testHDFSls .[Kmkdir testHDFS/testHDFS
+]777;notify;Command completed;hadoop fs -mkdir /testHDFS]0;gcasebe1@hdserver:~/hadoop-2.7.3]7;file://hdserver/home/gcasebe1/hadoop-2.7.3[gcasebe1@hdserver hadoop-2.7.3]$ hadoop fs -mkdir /testHDFS[4Pdata[8Pdfs dfs -ls /
+Found 4 items
+drwxr-xr-x   - gcasebe1 supergroup          0 2019-09-12 10:46 /data
+drwxr-xr-x   - gcasebe1 supergroup          0 2019-09-12 10:46 /testHDFS
+drwx------   - gcasebe1 supergroup          0 2019-09-06 14:45 /tmp
+drwxr-xr-x   - gcasebe1 supergroup          0 2019-09-06 14:44 /user
+]777;notify;Command completed;hdfs dfs -ls /]0;gcasebe1@hdserver:~/hadoop-2.7.3]7;file://hdserver/home/gcasebe1/hadoop-2.7.3[gcasebe1@hdserver hadoop-2.7.3]$ hdfs dfs -ls /adoop fs -mkdir /testHDFS[12Pdfs dfs -ls /user/gcasebee1
+ls: `/user/gcasebee1': No such file or directory
+]777;notify;Command completed;hdfs dfs -ls /user/gcasebee1]0;gcasebe1@hdserver:~/hadoop-2.7.3]7;file://hdserver/home/gcasebe1/hadoop-2.7.3[gcasebe1@hdserver hadoop-2.7.3]$ hdfs dfs -ls /user/gcasebee1[K[K[K[K[K[K[K[K[K[K
+Found 1 items
+drwxr-xr-x   - gcasebe1 supergroup          0 2019-09-12 10:44 /user/gcasebe1
+]777;notify;Command completed;hdfs dfs -ls /user]0;gcasebe1@hdserver:~/hadoop-2.7.3]7;file://hdserver/home/gcasebe1/hadoop-2.7.3[gcasebe1@hdserver hadoop-2.7.3]$ hdfs dfs -ls /user/gcasebee1[1P1
+Found 4 items
+drwxr-xr-x   - gcasebe1 supergroup          0 2019-09-12 10:44 /user/gcasebe1/data
+drwxr-xr-x   - gcasebe1 supergroup          0 2019-09-06 14:44 /user/gcasebe1/input
+drwxr-xr-x   - gcasebe1 supergroup          0 2019-09-06 14:49 /user/gcasebe1/output
+drwxr-xr-x   - gcasebe1 supergroup          0 2019-09-12 10:44 /user/gcasebe1/testHDFS
+]777;notify;Command completed;hdfs dfs -ls /user/gcasebe1]0;gcasebe1@hdserver:~/hadoop-2.7.3]7;file://hdserver/home/gcasebe1/hadoop-2.7.3[gcasebe1@hdserver hadoop-2.7.3]$ rm [Kdir data[K[K[K[K[K[K[K[K[K[Khadoop fs -rmdir /user/gcasebe1/data
+]777;notify;Command completed;hadoop fs -rmdir /user/gcasebe1/data]0;gcasebe1@hdserver:~/hadoop-2.7.3]7;file://hdserver/home/gcasebe1/hadoop-2.7.3[gcasebe1@hdserver hadoop-2.7.3]$ hadoop fs -rmdir /user/gcasebe1/data[K[K[K[KtestHDFS
+]777;notify;Command completed;hadoop fs -rmdir /user/gcasebe1/testHDFS]0;gcasebe1@hdserver:~/hadoop-2.7.3]7;file://hdserver/home/gcasebe1/hadoop-2.7.3[gcasebe1@hdserver hadoop-2.7.3]$ hadoop fs -rmdir /user/gcasebe1/testHDFS[4Pdata[9Pdfs dfs -ls /user/gcasebe1
+Found 2 items
+drwxr-xr-x   - gcasebe1 supergroup          0 2019-09-06 14:44 /user/gcasebe1/input
+drwxr-xr-x   - gcasebe1 supergroup          0 2019-09-06 14:49 /user/gcasebe1/output
+]777;notify;Command completed;hdfs dfs -ls /user/gcasebe1]0;gcasebe1@hdserver:~/hadoop-2.7.3]7;file://hdserver/home/gcasebe1/hadoop-2.7.3[gcasebe1@hdserver hadoop-2.7.3]$ hdfs dfs -ls /user/gcasebe1adoop fs -rmdir /user/gcasebe1/testHDFS[4Pdata[9Pdfs dfs -ls /user/gcasebe1[K/gcasebe1[K/gcasebee1[K
+Found 4 items
+drwxr-xr-x   - gcasebe1 supergroup          0 2019-09-12 10:46 /data
+drwxr-xr-x   - gcasebe1 supergroup          0 2019-09-12 10:46 /testHDFS
+drwx------   - gcasebe1 supergroup          0 2019-09-06 14:45 /tmp
+drwxr-xr-x   - gcasebe1 supergroup          0 2019-09-06 14:44 /user
+]777;notify;Command completed;hdfs dfs -ls /]0;gcasebe1@hdserver:~/hadoop-2.7.3]7;file://hdserver/home/gcasebe1/hadoop-2.7.3[gcasebe1@hdserver hadoop-2.7.3]$ ls
+[0m[38;5;27mbin[0m  gcasebeerhw1.txt  [38;5;27minclude[0m  [38;5;27mlibexec[0m      [38;5;27mlogs[0m        [38;5;27moutput[0m      [38;5;27msbin[0m
+[38;5;27metc[0m  gcasebeerhw2.txt  [38;5;27mlib[0m      LICENSE.txt  NOTICE.txt  README.txt  [38;5;27mshare[0m
+]777;notify;Command completed;ls]0;gcasebe1@hdserver:~/hadoop-2.7.3]7;file://hdserver/home/gcasebe1/hadoop-2.7.3[gcasebe1@hdserver hadoop-2.7.3]$ cp gcasebeerh2.tx[K[K[K[K[Khw1.txt [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kecho "HDFS test data" > [KtestFile
+]777;notify;Command completed;echo "HDFS test data" >testFile]0;gcasebe1@hdserver:~/hadoop-2.7.3]7;file://hdserver/home/gcasebe1/hadoop-2.7.3[gcasebe1@hdserver hadoop-2.7.3]$ echo "HDFS test data" >testFilels[K
+[0m[38;5;27mbin[0m  gcasebeerhw1.txt  [38;5;27minclude[0m  [38;5;27mlibexec[0m      [38;5;27mlogs[0m        [38;5;27moutput[0m      [38;5;27msbin[0m   testFile
+[38;5;27metc[0m  gcasebeerhw2.txt  [38;5;27mlib[0m      LICENSE.txt  NOTICE.txt  README.txt  [38;5;27mshare[0m
+]777;notify;Command completed;ls]0;gcasebe1@hdserver:~/hadoop-2.7.3]7;file://hdserver/home/gcasebe1/hadoop-2.7.3[gcasebe1@hdserver hadoop-2.7.3]$ cat testFile
+HDFS test data
+]777;notify;Command completed;cat testFile]0;gcasebe1@hdserver:~/hadoop-2.7.3]7;file://hdserver/home/gcasebe1/hadoop-2.7.3[gcasebe1@hdserver hadoop-2.7.3]$ hadoop fs -cp testFile /data
+cp: `testFile': No such file or directory
+]777;notify;Command completed;hadoop fs -cp testFile /data]0;gcasebe1@hdserver:~/hadoop-2.7.3]7;file://hdserver/home/gcasebe1/hadoop-2.7.3[gcasebe1@hdserver hadoop-2.7.3]$ hadoop fs -copyFromLocal fil[K[K[K[K testFile /data
+]777;notify;Command completed;hadoop fs -copyFromLocal testFile /data]0;gcasebe1@hdserver:~/hadoop-2.7.3]7;file://hdserver/home/gcasebe1/hadoop-2.7.3[gcasebe1@hdserver hadoop-2.7.3]$ hadoop fs -copyFromLocal testFile /data[11Pp[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[16Pcat testFilels[Kecho "HDFS test data" >testFilels[Khdfs dfs -ls /
+Found 4 items
+drwxr-xr-x   - gcasebe1 supergroup          0 2019-09-12 11:03 /data
+drwxr-xr-x   - gcasebe1 supergroup          0 2019-09-12 10:46 /testHDFS
+drwx------   - gcasebe1 supergroup          0 2019-09-06 14:45 /tmp
+drwxr-xr-x   - gcasebe1 supergroup          0 2019-09-06 14:44 /user
+]777;notify;Command completed;hdfs dfs -ls /]0;gcasebe1@hdserver:~/hadoop-2.7.3]7;file://hdserver/home/gcasebe1/hadoop-2.7.3[gcasebe1@hdserver hadoop-2.7.3]$ hdfs dfs -ls /data
+Found 1 items
+-rw-r--r--   1 gcasebe1 supergroup         15 2019-09-12 11:03 /data/testFile
+]777;notify;Command completed;hdfs dfs -ls /data]0;gcasebe1@hdserver:~/hadoop-2.7.3]7;file://hdserver/home/gcasebe1/hadoop-2.7.3[gcasebe1@hdserver hadoop-2.7.3]$ hadoop fs -cat /data/testFile
+HDFS test data
+]777;notify;Command completed;hadoop fs -cat /data/testFile]0;gcasebe1@hdserver:~/hadoop-2.7.3]7;file://hdserver/home/gcasebe1/hadoop-2.7.3[gcasebe1@hdserver hadoop-2.7.3]$ hadoop fs -mv /data/tests[KFile /testHDFS/ts[KestFile[K[K[K[K[K[K[K[K
+]777;notify;Command completed;hadoop fs -mv /data/testFile /testHDFS/]0;gcasebe1@hdserver:~/hadoop-2.7.3]7;file://hdserver/home/gcasebe1/hadoop-2.7.3[gcasebe1@hdserver hadoop-2.7.3]$ hadoop fs -mv /data/testFile /testHDFS/[10Pcat /data/testFile[11Pdfs dfs -ls /data
+]777;notify;Command completed;hdfs dfs -ls /data]0;gcasebe1@hdserver:~/hadoop-2.7.3]7;file://hdserver/home/gcasebe1/hadoop-2.7.3[gcasebe1@hdserver hadoop-2.7.3]$ hdfs dfs -ls /data[K[K[K[KtestHDFS
+Found 1 items
+-rw-r--r--   1 gcasebe1 supergroup         15 2019-09-12 11:03 /testHDFS/testFile
+]777;notify;Command completed;hdfs dfs -ls /testHDFS]0;gcasebe1@hdserver:~/hadoop-2.7.3]7;file://hdserver/home/gcasebe1/hadoop-2.7.3[gcasebe1@hdserver hadoop-2.7.3]$ cp /testHDFS/testFile [1@h[1@a[1@d[1@o[1@o[1@p[1@ [1@f[1@s[1@ [1@-[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/testHDFS/testFile2
+]777;notify;Command completed;hadoop fs -cp /testHDFS/testFile /testHDFS/testFile2]0;gcasebe1@hdserver:~/hadoop-2.7.3]7;file://hdserver/home/gcasebe1/hadoop-2.7.3[gcasebe1@hdserver hadoop-2.7.3]$ hadoop fs -cp /testHDFS/testFile /testHDFS/testFile2[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[30Pdfs dfs -ls /testHDFS
+Found 2 items
+-rw-r--r--   1 gcasebe1 supergroup         15 2019-09-12 11:03 /testHDFS/testFile
+-rw-r--r--   1 gcasebe1 supergroup         15 2019-09-12 11:08 /testHDFS/testFile2
+]777;notify;Command completed;hdfs dfs -ls /testHDFS]0;gcasebe1@hdserver:~/hadoop-2.7.3]7;file://hdserver/home/gcasebe1/hadoop-2.7.3[gcasebe1@hdserver hadoop-2.7.3]$ hadoop fs -df /
+Filesystem                    Size    Used    Available  Use%
+hdfs://localhost:9000  18238930944  851994  11853418496    0%
+]777;notify;Command completed;hadoop fs -df /]0;gcasebe1@hdserver:~/hadoop-2.7.3]7;file://hdserver/home/gcasebe1/hadoop-2.7.3[gcasebe1@hdserver hadoop-2.7.3]$ hadoop fs -df /-/h/ /
+Filesystem               Size     Used  Available  Use%
+hdfs://localhost:9000  17.0 G  832.0 K     11.0 G    0%
+]777;notify;Command completed;hadoop fs -df -h /]0;gcasebe1@hdserver:~/hadoop-2.7.3]7;file://hdserver/home/gcasebe1/hadoop-2.7.3[gcasebe1@hdserver hadoop-2.7.3]$ hadoop fs -df -h //[KtestHDFS[1P /testHDFSu /testHDFS
+15  /testHDFS/testFile
+15  /testHDFS/testFile2
+]777;notify;Command completed;hadoop fs -du /testHDFS]0;gcasebe1@hdserver:~/hadoop-2.7.3]7;file://hdserver/home/gcasebe1/hadoop-2.7.3[gcasebe1@hdserver hadoop-2.7.3]$ hadoop fs -du /testHDFS-/testHDFSh/testHDFS /testHDFS
+15  /testHDFS/testFile
+15  /testHDFS/testFile2
+]777;notify;Command completed;hadoop fs -du -h /testHDFS]0;gcasebe1@hdserver:~/hadoop-2.7.3]7;file://hdserver/home/gcasebe1/hadoop-2.7.3[gcasebe1@hdserver hadoop-2.7.3]$ hadoop fs -du -h /testHDFS[1P /testHDFSs /testHDFS
+30  /testHDFS
+]777;notify;Command completed;hadoop fs -du -s /testHDFS]0;gcasebe1@hdserver:~/hadoop-2.7.3]7;file://hdserver/home/gcasebe1/hadoop-2.7.3[gcasebe1@hdserver hadoop-2.7.3]$ hadoop fs -du -s /testHDFSh[C[C[C[C[C[C[C[C[C[C[3P/testHDFS[5Pf -h //[Kdfs dfs -ls /testHDFSadoop fs -cp /testHDFS/testFile /testHDFS/testFile2[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[30Pdfs dfs -ls /testHDFS[K[K[K[K[K[K[K[K
+Found 4 items
+drwxr-xr-x   - gcasebe1 supergroup          0 2019-09-12 11:06 /data
+drwxr-xr-x   - gcasebe1 supergroup          0 2019-09-12 11:08 /testHDFS
+drwx------   - gcasebe1 supergroup          0 2019-09-06 14:45 /tmp
+drwxr-xr-x   - gcasebe1 supergroup          0 2019-09-06 14:44 /user
+]777;notify;Command completed;hdfs dfs -ls /]0;gcasebe1@hdserver:~/hadoop-2.7.3]7;file://hdserver/home/gcasebe1/hadoop-2.7.3[gcasebe1@hdserver hadoop-2.7.3]$ hadoop fs -rmdir /data
+]777;notify;Command completed;hadoop fs -rmdir /data]0;gcasebe1@hdserver:~/hadoop-2.7.3]7;file://hdserver/home/gcasebe1/hadoop-2.7.3[gcasebe1@hdserver hadoop-2.7.3]$ hadoop fs -rmdir /data[8Pdfs dfs -ls /
+Found 3 items
+drwxr-xr-x   - gcasebe1 supergroup          0 2019-09-12 11:08 /testHDFS
+drwx------   - gcasebe1 supergroup          0 2019-09-06 14:45 /tmp
+drwxr-xr-x   - gcasebe1 supergroup          0 2019-09-06 14:44 /user
+]777;notify;Command completed;hdfs dfs -ls /]0;gcasebe1@hdserver:~/hadoop-2.7.3]7;file://hdserver/home/gcasebe1/hadoop-2.7.3[gcasebe1@hdserver hadoop-2.7.3]$ hdfs dfs -ls /adoop fs -rmdir /data[K[K[K[KtestHDFS
+rmdir: `/testHDFS': Directory is not empty
+]777;notify;Command completed;hadoop fs -rmdir /testHDFS]0;gcasebe1@hdserver:~/hadoop-2.7.3]7;file://hdserver/home/gcasebe1/hadoop-2.7.3[gcasebe1@hdserver hadoop-2.7.3]$ hadoop fs -rmdir /testHDFS[C[1P /testHDFS[1P /testHDFS[1P /testHDFS[C /testHDFS- /testHDFSr /testHDFS
+19/09/12 11:14:19 INFO fs.TrashPolicyDefault: Namenode trash configuration: Deletion interval = 0 minutes, Emptier interval = 0 minutes.
+Deleted /testHDFS
+]777;notify;Command completed;hadoop fs -rm -r /testHDFS]0;gcasebe1@hdserver:~/hadoop-2.7.3]7;file://hdserver/home/gcasebe1/hadoop-2.7.3[gcasebe1@hdserver hadoop-2.7.3]$ hadoop fs -rm -r /testHDFSdi[C[C[C[C[C[C[C[C[C[C[C[12Pdfs dfs -ls /
+Found 2 items
+drwx------   - gcasebe1 supergroup          0 2019-09-06 14:45 /tmp
+drwxr-xr-x   - gcasebe1 supergroup          0 2019-09-06 14:44 /user
+]777;notify;Command completed;hdfs dfs -ls /]0;gcasebe1@hdserver:~/hadoop-2.7.3]7;file://hdserver/home/gcasebe1/hadoop-2.7.3[gcasebe1@hdserver hadoop-2.7.3]$ exit
+exit
+
+Script done on Thu 12 Sep 2019 11:14:50 AM PDT
