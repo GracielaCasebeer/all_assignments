@@ -43,9 +43,13 @@ public class App extends Configured implements Tool
     }
 
     public int run(String[] strings) throws Exception {
+        
+        //Get hdfs file system
         FileSystem hdfs = FileSystem.get(getConf());
+        //Get local file system
         LocalFileSystem localFileSystem = FileSystem.getLocal(getConf());
-
+        
+        //Instantiate command objects
         lsCmd = new LSCmd(hdfs, strings);
         catCmd = new CATCmd(hdfs,strings, localFileSystem);
         getCmd = new GETCmd(hdfs, strings, localFileSystem);

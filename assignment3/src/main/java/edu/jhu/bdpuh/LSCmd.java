@@ -28,7 +28,7 @@ public class LSCmd {
 
 
     public LSCmd(FileSystem hdfs, String[] args){
-
+        //Constructor
         this.hdfs = hdfs;
         this.args = args;
         options.addOption("ls", false, "show all files and subdirectories in current directory");
@@ -62,7 +62,7 @@ public class LSCmd {
                 }
             } else{ // Print everything
                 System.out.println((fs.isDirectory() ? "d":"-")+fs.getPermission()+"\t"
-                        + (fs.getReplication() == 0? "-": fs.getReplication())+" "+fs.getOwner()+" "+fs.getGroup() +"\t"
+                        + (fs.getReplication() == 0 ? "-": fs.getReplication())+" "+fs.getOwner()+" "+fs.getGroup() +"\t"
                         + (humanRead ? humanReadableFileSize(fs.getLen()) : fs.getLen())+" "+(new Date(fs.getModificationTime()))+"\t"
                         + fs.getPath());
             }
@@ -94,9 +94,14 @@ public class LSCmd {
     public void execute() throws IOException, ParseException {
         CommandLine line = parser.parse(options, args);
         System.out.println("ls cmd detected parsing options..");
-        if (line.hasOption("R")) System.out.println("has -R option");
-        if (line.hasOption("d")) System.out.println("has -d option");
-        if (line.hasOption("h")) System.out.println("has -h option");
+        
+        if (line.getOptions().length > 1) {
+            if (line.hasOption("R")) System.out.println("has -R option");
+            if (line.hasOption("d")) System.out.println("has -d option");
+            if (line.hasOption("h")) System.out.println("has -h option");        
+        } else if (line.getOptions().length == 1){
+            System.out.println ("no options provided");
+        }
 
         ArrayList<LocatedFileStatus> listing = new ArrayList<LocatedFileStatus>();
         if (line.hasOption("R")){

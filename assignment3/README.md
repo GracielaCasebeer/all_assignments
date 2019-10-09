@@ -1,6 +1,6 @@
 # Student Information
-Author:  
-Email: 
+Author: Graciela A Casebeer 
+Email: gcasebe1@jhu.edu
 
 # Programming Assignment 3 - HDFS Java API
 In this assignment you will modify a maven project by adding code to implement file system functions using the HDFS Java API.
@@ -41,14 +41,14 @@ Command | Notes
 \-rm \[\-f\] \[\-r&#124;\-R\] \[\-skipTrash\] \<src\> ...| Remove files from hdfs
 
 # Student Observations
-Challenging but very helpful in understanding the java api for hadoop programming.
+Having the sample code was very helpful.
+The files for this assignment are all located in the "gcasebeerhw3" folder.
 
 ## Problems Encountered / how you resolved them
-I was unable to implement the -crc option for the -get command. I suspect I was supposed to download that with the file 
-on my local but was not able to find the right functions in the api for it.
+I had a bit of a problem implementing the -skipTrash option. I noticed that newer versions of the API have more to get the trash directory more easily. However, since we installed hadoop 2.7.3, I worked with the commands available in that version of the API.
 
 ## Resources you found helpful
-Google 
+Google, Bing, Yahoo
 
 ## Describe any help you recieved
 none
