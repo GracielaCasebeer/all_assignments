@@ -1,5 +1,6 @@
 # Student Information
 Author: Graciela A Casebeer 
+
 Email: gcasebe1@jhu.edu
 
 # Programming Assignment 3 - HDFS Java API
