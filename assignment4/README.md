@@ -1,5 +1,7 @@
 # Student Information
-<put your name and email here for identification purposes>
+Author: Graciela A Casebeer 
+
+Email: gcasebe1@jhu.edu
 
 # Programming Assignment 4 - Map Reduce Introduction
 In this assignment you will modify a maven project by adding code to 
@@ -133,16 +135,18 @@ searchindex \<inputPath\> \<outputPath\> | Builds a search index
 Please answer each section or state "none".
 
 ## Problems Encountered / how you resolved them
-<did you encounter any interesting issues? 
-How did you resolve them?>
+I wanted to create a structure of the form HashMap<String,HashSet<Integer>> where the key for the hashmap was the file name being processed and the hashset was the list of positions of a given word in the file.
+I tried to use a generic Object as the map output and reducer input, but I kept getting type mismatch errors. I found that the input/output key-values for mapper and reducer need to be Writable. So, I attempted to create my custom HashMap<String,HashSet<Integer>> using Writable parameters as HashMap<Text,HashSet<IntWritable>> but all the examples I found online were tailored to much simpler structures. Just combinations of Text/IntWritable types in a "plain vanilla" form, meaning that they were not part of a more sophisticated structure as a HashMap containing HashSet values.
+Finally I found this sample code that taught me how to serialize/deserialize this type of structure (thanks to deleteman for his sample code!).
+https://github.com/deleteman/inverted-index-java/blob/master/src/main/java/com/globant/training/invertedIndex/WordIntArrayDict.java
+
+Another silly problem that I found and set me back quite a bit was that I was so concentrated in getting the mapper/reducer work that I neglected to see that my driver class had the wrong map output set. It was frustrating how much time a lost for this little mistake. The lesson was that I need to pay a lot more attention to detail! One must not forget how we set the job configuration in the driver. I spun my wheels for quite a while until I finally went back to the driver and there it was! I set the wrong type for the map output... I felt a so dumb, but oh well... live and learn.
 
 ## Resources you found helpful
-<did you find a really good reference?
-Please share them here>
+Google, Bing, Yahoo, GitHub
 
 ## Describe any help you recieved
-<did you discuss the problems you were having with others?
-Discussion is encouraged as long as you do not share specific solutions>
+None
 
 ## Make recommendations for improvement
-<How should I improve this assignment?>
+None
