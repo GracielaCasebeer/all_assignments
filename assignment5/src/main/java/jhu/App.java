@@ -14,7 +14,7 @@ import org.apache.log4j.PropertyConfigurator;
 public class App extends Configured implements Tool
 {
     public static void main( String[] args ) throws Exception {
-        PropertyConfigurator.configure("/etc/hadoop/log4j.properties");
+        //PropertyConfigurator.configure("/etc/hadoop/log4j.properties");
         int ret = ToolRunner.run(new Configuration(), new App(), args);
         System.exit(ret);
     }

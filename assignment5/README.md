@@ -1,5 +1,7 @@
 # Student Information
-<put your name and email here for identification purposes>
+Author: Graciela A Casebeer 
+
+Email: gcasebe1@jhu.edu
 
 # Programming Assignment 5 - Map Reduce Wrangling
 In this assignment you will be working with a structured data set and extracting insights from the data.
@@ -120,11 +122,37 @@ You are free to analyze the output of your job using any means you have availabl
 ### Describe the resulting graph
 For example, how many nodes and edges are there? 
 
+First of all, the output of enron-stats gives us a file with 84,983 lines, which means we have almost 85 thousand different email addresses in the data.
+
+The resulting graph contains 334,546 lines, which means that there are 334.5k sender-receiver unique pairs. In most of the cases, the sender either send the email to the receiver or cc'd the reciver, but didn't do both (e.g. to and cc).
+
+In very few situations we find that an email was sent with the receiver both in the to and cc header. Examples:
+zimin.lu@enron.com  stinson.gibner@enron.com    97  206
+zimin.lu@enron.com  vince.kaminski@enron.com    118 174
+zimin.lu@enron.com  zimin.lu@enron.com  10  6
+yvette.connevey@enron.com   pat.clynes@enron.com    108 13
+v.weldon@enron.com  mike.roberts@enron.com  12  21
+tana.jones@enron.com    anthony.campos@enron.com    181 18
+
+
 ### What can degree centrality tell us?
 Are there relationships that really stick out? 
 
+Degree centrality tells how "popular" a person is via email based on how much email he or she receives (in-degree) or how how "talkative" a person is based on how many emails he or she sends (out-degree).
+
+In the data, most people were either in one extreme (in-degree > 0) or the other (out-degree > 0), but not both.
+
+However, there were a few exceptions. Examples:
+adrian.woolcock@enron.com   18  93
+adriane.schultea@enron.com  24  12
+afilas@keyspanenergy.com    5   159
+outlook.team@enron.com  39  1566
+
+Particularly the last item, outlook.team@enron.com makes sense. Their out-degree is far superior than their in-degree. This is probably because their work role may be more of a broadcaster of information than a reciever of it.
+
 ### Any additional insights you have
 
+I can see how this analysis may be used in social media to determine influencers and followers.
 
 ## Command Line Interface Specification
 
@@ -139,16 +167,13 @@ degree-centrality [-tt #] [-ct #] \<inputPath\> \<outputPath\> | Produce the deg
 Please answer each section or state "none".
 
 ## Problems Encountered / how you resolved them
-<did you encounter any interesting issues? 
-How did you resolve them?>
+I had problems with some maven dependencies. Once I purged my maven directory, things worked well.
 
 ## Resources you found helpful
-<did you find a really good reference?
-Please share them here>
+Google, Bing
 
 ## Describe any help you recieved
-<did you discuss the problems you were having with others?
-Discussion is encouraged as long as you do not share specific solutions>
+None
 
 ## Make recommendations for improvement
-<How should I improve this assignment?>
+None
