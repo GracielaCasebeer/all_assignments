@@ -120,6 +120,7 @@ Answer the following questions using your query tools.
 
 ### What is the approximate date range of the data?
 
+```
 Please refer to file "outputFiles\histogramYear.txt", which is also pasted below for convenience.
 1970    271
 1980    522
@@ -143,8 +144,11 @@ Obviously, the 7 data points from 2020 onwards are outliers.
 Removing the outliers, the data goes from 1970 to 2012.
 The top two years most emails are 2001 and 200. The bottom two years with least emails are 2005 and 2007.
 All in all, it really looks like the bulk of the data concentrates between years 1997 2004.
+```
 
 ### Which month had the most emails sent by enron employees?
+
+```
 Please refer to file "outputFiles\fromEnronHistogramMonth.txt".
 Years 2000 and 2001 had the months with most emails sent by enron employees.
 For convenience, I'm pasting below the months in years 2000 and 2001 with more than 20,000 emails:
@@ -161,8 +165,11 @@ For convenience, I'm pasting below the months in years 2000 and 2001 with more t
 2001.11 20353
 
 April 2001 was the month with most emails sent by enron employees, with a quantity of 31,105 emails.
+```
 
 ### What is the frequency of enron only emails referencing happy hour?
+
+```
 Emails with BODY referencing happy hour:
 Please refer to the files:
     "outputFiles\fromEnronHappyHourHistogramYear.txt"
@@ -217,11 +224,10 @@ Please refer to the files:
     "outputFiles\fromEnronSubjectHappyHourHistogramHour.txt"
     2001.5.11.11    19
     May 11 2001 11am was the hour with most emails referencing happy hour in the email subject.
-
-
+```
 
 ### Any additional insights you have
-
+None
 
 ## Command Line Interface Specification
 
