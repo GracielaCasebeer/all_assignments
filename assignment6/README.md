@@ -1,5 +1,7 @@
 # Student Information
-<put your name and email here for identification purposes>
+Author: Graciela A Casebeer 
+
+Email: gcasebe1@jhu.edu
 
 # Programming Assignment 6 - Map Reduce Query
 In this assignment you will be introduced to Avro as a serialization framework. We will continue working with the Enron Data Set from last time.
@@ -117,13 +119,106 @@ For all others, it will be the starting date of the bin.
 Answer the following questions using your query tools.
 
 ### What is the approximate date range of the data?
-<some of these dates are outliers and should be disregarded>
+
+Please refer to file "outputFiles\histogramYear.txt", which is also pasted below for convenience.
+1970    271
+1980    522
+1986    2
+1997    437
+1998    177
+1999    11144
+2000    196100
+2001    272751
+2002    35916
+2004    70
+2005    1
+2007    1
+2012    2
+2020    2
+2024    1
+2043    1
+2044    3
+
+Obviously, the 7 data points from 2020 onwards are outliers.
+Removing the outliers, the data goes from 1970 to 2012.
+The top two years most emails are 2001 and 200. The bottom two years with least emails are 2005 and 2007.
+All in all, it really looks like the bulk of the data concentrates between years 1997 2004.
 
 ### Which month had the most emails sent by enron employees?
-<this will require a select and before the histogram>
+Please refer to file "outputFiles\fromEnronHistogramMonth.txt".
+Years 2000 and 2001 had the months with most emails sent by enron employees.
+For convenience, I'm pasting below the months in years 2000 and 2001 with more than 20,000 emails:
+
+2000.10 21410
+2000.11 26232
+2000.12 25511
+2001.1  21225
+2001.2  20711
+2001.3  24511
+2001.4  31105 THIS IS THE MONTH WITH MOST EMAILS SENT BY ENRON EMPLOYEES
+2001.5  27871
+2001.10 27898
+2001.11 20353
+
+April 2001 was the month with most emails sent by enron employees, with a quantity of 31,105 emails.
 
 ### What is the frequency of enron only emails referencing happy hour?
-<consider both the subject and body>
+Emails with BODY referencing happy hour:
+Please refer to the files:
+    "outputFiles\fromEnronHappyHourHistogramYear.txt"
+    1999    6
+    2000    45
+    2001    87
+    2002    4
+    2001 was the year with most emails referencing happy hour in the email body.
+
+    "outputFiles\fromEnronHappyHourHistogramMonth.txt"
+    2000.10 12
+    2000.11 4
+    2000.12 10
+    2001.1  12
+    2001.4  16
+    2001.5  15
+    2001.10 10
+    2001.11 19
+    November 2001 was the month with most emails referencing happy hour in the email body.
+
+    "outputFiles\fromEnronHappyHourHistogramDay.txt"
+    2001.4.27   7
+    2001.11.6   7
+    November 6 and April 27 both in year 2001 were the days with most emails referencing happy hour in the email body.
+
+    "outputFiles\fromEnronHappyHourHistogramHour.txt"
+    2001.4.27.10    6
+    2001.11.6.15    7
+    November 6 2001 3pm was the hour with most emails referencing happy hour in the email body.
+    April 4 2001 10am was the second hour with most emails referencing happy hour in the email body.
+
+Emails with SUBJECT referencing happy hour:
+Please refer to the files:
+    "outputFiles\fromEnronSubjectHappyHourHistogramYear.txt"
+    2000    146
+    2001    316
+    2002    17
+    2001 was the year with most emails referencing happy hour in the email subject.
+
+    "outputFiles\fromEnronSubjectHappyHourHistogramMonth.txt"
+    2000.10 41
+    2000.12 31
+    2001.4  66
+    2001.5  82
+    Above are the top two months with most emails referencing happy hour in the email subject for years 2000 and 2001.
+    May 2001 was the month with most emails referencing happy hour in the email subject.
+
+    "outputFiles\fromEnronSubjectHappyHourHistogramDay.txt"
+    2001.5.11   36
+    May 11 2001 was the day with most emails referencing happy hour in the email subject.
+
+    "outputFiles\fromEnronSubjectHappyHourHistogramHour.txt"
+    2001.5.11.11    19
+    May 11 2001 11am was the hour with most emails referencing happy hour in the email subject.
+
+
 
 ### Any additional insights you have
 
@@ -142,16 +237,15 @@ email-histogram \<bin-type\>  \<inputPath\> \<outputPath\> | Create a histogram 
 Please answer each section or state "none".
 
 ## Problems Encountered / how you resolved them
-<did you encounter any interesting issues? 
-How did you resolve them?>
+I worked with a subset of the data to get the program working, but when I moved to using the full data set I found that I was missing serveral data validation points that my smaller data subset didn't have. For example, I found that I was not checking for the cases where the subject was blank.
+
+I also wanted to do a better job with the CLI and started investigating the use of picocli to do my CLI. However, due to time constraints, I had to abandon the idea and concentrated in getting the mapreduce jobs working as well as doing the data analysis. The good thing is that I became aware of picocli and in the future I hope I can have a chance to use that library to have a more elegant cli implementation.
 
 ## Resources you found helpful
-<did you find a really good reference?
-Please share them here>
+Google, Bing, Yahoo.
 
 ## Describe any help you recieved
-<did you discuss the problems you were having with others?
-Discussion is encouraged as long as you do not share specific solutions>
+None
 
 ## Make recommendations for improvement
-<How should I improve this assignment?>
+None
